@@ -1,0 +1,15 @@
+# Required connection configs for Kafka producer, consumer, and admin
+[default]
+bootstrap.servers=pkc-4r087.us-west2.gcp.confluent.cloud:9092
+security.protocol=SASL_SSL
+sasl.mechanisms=PLAIN
+sasl.username=IC36SACAFDAJF3XK
+sasl.password=V3SFQOJTbhkplNV82nM1akV2RZSnhdfyxpyhY1sOvTX++iMWzvF/zx8xa1utwudd
+
+[consumer]
+group.id=python_example_group_1
+
+# 'auto.offset.reset=earliest' to start reading from the beginning of
+# the topic if no committed offsets exist.
+auto.offset.reset=earliest
+
